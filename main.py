@@ -7,6 +7,8 @@ from datetime import datetime, timedelta
 
 from animation import EnrollmentAnimation, FEEDBACK_TO_DESCRIPTIVE_MSG
 from parameters import access_key, DEFAULT_DEVICE_INDEX
+from rout import RoutToSite
+from logs import write_log, write_space
 
 
 BANNER = pyfiglet.figlet_format("VOICE IDENTIFICATION")
@@ -46,17 +48,26 @@ def compare_voice(input_path):
         scores = eagle.process(audio_frame)
         scores_list.append(scores[0])
 
-        score = scores_list.count(1.00) >= len(scores_list) * 0.5
-        # print(scores_list '\n')
+        score = scores_list.count(1.0) >= 50
+        # print(scores_list.count(1.0), len(scores_list)*0.75)
+        # print(scores_list, '\n')
+        # print(name_speaker)
+        write_log(f"{speaker_labels[0]}: count={scores_list.count(1.0)}, len={len(scores_list)}")
         if score:
-            return console_pointer + f"That's for sure you - {name_speaker}"
+            write_space()
+            bool_result, text_result = True, console_pointer + f"That's for sure you - {name_speaker}"
+            break
         else:
             if datetime.now() - time_start >= timedelta(seconds=6):
-                return console_pointer + f"That's for sure not {name_speaker}"
+                write_space()
+                bool_result, text_result = False, console_pointer + f"That's for sure not {name_speaker}"
+                break
 
     recognizer_recorder.stop()
     recognizer_recorder.delete()
     eagle.delete()
+
+    return bool_result, text_result
 
 
 def record_micro(output_path):
@@ -109,11 +120,17 @@ def mode_inputs():
         record_micro(output_path)
     elif mode == "compare":
         input_path = input(console_pointer + "Write absolute path to your profile (.wav file)" + input_pointer)
-        print(compare_voice(input_path))
+        compare = compare_voice(input_path)
+        print(compare[1])
+        if compare[0]:
+            RoutToSite().auth()
     elif mode == "both":
         output_path = input(console_pointer + "Write absolute path to save your profile (.wav file)" + input_pointer)
         record_micro(output_path)
-        print(compare_voice(output_path))
+        compare = compare_voice(output_path)
+        print(compare[1])
+        if compare[0]:
+            RoutToSite().auth()
 
 
 if __name__ == "__main__":
