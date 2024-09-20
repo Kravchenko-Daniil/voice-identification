@@ -1,0 +1,5 @@
+2024/09/12-12:00:08.510 1474 Creating DB /home/coom/python/voice-identification/Cookie/Profile 1/IndexedDB/https_www.okx.com_0.indexeddb.leveldb since it was missing.
+2024/09/12-12:00:08.512 1474 Reusing MANIFEST /home/coom/python/voice-identification/Cookie/Profile 1/IndexedDB/https_www.okx.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/12-12:00:50.948 1474 Level-0 table #5: started
+2024/09/12-12:00:50.967 1474 Level-0 table #5: 965754 bytes OK
+2024/09/12-12:00:50.969 1474 Delete type=0 #3

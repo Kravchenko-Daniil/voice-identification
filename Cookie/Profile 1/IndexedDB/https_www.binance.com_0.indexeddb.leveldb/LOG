@@ -1,0 +1,22 @@
+2024/09/12-12:10:14.701 22b2 Reusing MANIFEST /home/coom/python/voice-identification/Cookie/Profile 1/IndexedDB/https_www.binance.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/12-12:10:14.701 22b2 Recovering log #3
+2024/09/12-12:10:14.701 22b2 Reusing old log /home/coom/python/voice-identification/Cookie/Profile 1/IndexedDB/https_www.binance.com_0.indexeddb.leveldb/000003.log 
+2024/09/12-12:10:28.452 22b5 Level-0 table #5: started
+2024/09/12-12:10:28.454 22b5 Level-0 table #5: 67521 bytes OK
+2024/09/12-12:10:28.455 22b5 Delete type=0 #3
+2024/09/12-12:10:28.455 22b5 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/09/12-12:10:28.459 22b5 Level-0 table #7: started
+2024/09/12-12:10:28.460 22b5 Level-0 table #7: 1204 bytes OK
+2024/09/12-12:10:28.461 22b5 Delete type=0 #4
+2024/09/12-12:10:28.462 22b5 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/09/12-12:10:28.462 22b5 Level-0 table #9: started
+2024/09/12-12:10:28.463 22b5 Level-0 table #9: 658 bytes OK
+2024/09/12-12:10:28.464 22b5 Delete type=0 #6
+2024/09/12-12:10:28.464 22b3 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 991 : 1
+2024/09/12-12:10:28.464 22b3 Compacting 1@0 + 1@1 files
+2024/09/12-12:10:28.465 22b3 Generated table #10@0: 38 keys, 847 bytes
+2024/09/12-12:10:28.465 22b3 Compacted 1@0 + 1@1 files => 847 bytes
+2024/09/12-12:10:28.467 22b3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/09/12-12:10:28.467 22b3 Delete type=2 #7
+2024/09/12-12:10:28.467 22b3 Delete type=2 #9
+2024/09/12-12:10:28.467 22b2 Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 991 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
