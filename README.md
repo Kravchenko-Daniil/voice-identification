@@ -4,7 +4,7 @@ VoiceIdentification
 Installing
 ~~~~~~~~~~~~~
 git clone ...
-pip install -r requirements.txt
+pip install -r req.txt
 python main.py
 ~~~~~~~~~~~~~
 * Recommended to use python 3.11
