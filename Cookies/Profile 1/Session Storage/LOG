@@ -1,0 +1,17 @@
+2024/10/17-10:13:09.506 4 Reusing MANIFEST /home/coom/python/voice-identification/Cookies/Profile 1/Session Storage/MANIFEST-000001
+2024/10/17-10:13:09.507 4 Recovering log #23
+2024/10/17-10:13:09.507 4 Level-0 table #26: started
+2024/10/17-10:13:09.509 4 Level-0 table #26: 11878 bytes OK
+2024/10/17-10:13:09.512 4 Delete type=0 #23
+2024/10/17-10:13:09.512 5 Compacting 4@0 + 1@1 files
+2024/10/17-10:13:09.515 5 Generated table #28@0: 40 keys, 12590 bytes
+2024/10/17-10:13:09.515 5 Compacted 4@0 + 1@1 files => 12590 bytes
+2024/10/17-10:13:09.516 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/10/17-10:13:09.517 5 Delete type=2 #26
+2024/10/17-10:13:09.517 5 Delete type=2 #17
+2024/10/17-10:13:09.517 5 Delete type=2 #21
+2024/10/17-10:13:09.517 5 Delete type=2 #24
+2024/10/17-10:13:09.517 5 Delete type=2 #19
+2024/10/17-10:13:16.757 5 Level-0 table #30: started
+2024/10/17-10:13:16.765 5 Level-0 table #30: 11930 bytes OK
+2024/10/17-10:13:16.767 5 Delete type=0 #27

@@ -11,18 +11,19 @@ class RoutToSite:
         options = ChromeOptions()
         options.add_argument("--allow-profiles-outside-user-dir")
         options.add_argument("--enable-profile-shortcut-manager")
-        options.add_argument(r"user-data-dir=Cookie")
+        options.add_argument(r"user-data-dir=Cookies")
         options.add_argument("--profile-directory=Profile 1")
         self.driver = webdriver.Chrome(options=options)
         self.driver.set_page_load_timeout(15)
         self.driver.implicitly_wait(15)
 
-        self.url = "https://www.binance.com/ru/my/wallet/account/overview"
+        # self.url = "https://www.binance.com/ru/my/wallet/account/overview"
+        self.url = "https://www.okx.com/account/users"
 
     def auth(self):
         try:
             self.driver.get(self.url)
-            time.sleep(60)
+            time.sleep(10)
 
             # time.sleep(2)
             # self.driver.find_element(
@@ -45,3 +46,6 @@ class RoutToSite:
             print("Congratulations, you are logged in")
         except Exception as e:
             print(e)
+
+
+RoutToSite().auth()
